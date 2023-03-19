@@ -20,11 +20,11 @@ export default function App() {
         rightButton:'iLo quiero!'
        })
     useEffect(()=>{
-        axios.get('https://www.fastmock.site/mock/02418c233491e66e02b90a1c2591c8b5/mock/mock/mock').then((res)=>{
+        axios.get('https://www.fastmock.site/mock/02418c233491e66e02b90a1c2591c8b5/mock/mock').then((res)=>{
             if(TC&&window.innerWidth>768){
-                setdataS(res.data.ch['1440'])
+                setdataS(res.data.zh['1440'])
             }else if(TC&&window.innerWidth<=768){
-                setdataS(res.data.ch['768'])
+                setdataS(res.data.zh['768'])
             }
 
             if(!TC&&window.innerWidth>768){
