@@ -1,0 +1,286 @@
+@charset 'utf-8';
+
+
+@media screen and (min-width:769px){
+    body,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #container {
+        width: 100vw;
+        height: 20.833vw;
+        background-color: #2D2765;
+        display: flex;
+    
+    }
+    
+    .left {
+        display: flex;
+        align-items: center;
+        width: 50vw;
+        height: 20.833vw;
+        background-color: #6B5FF2;
+        clip-path: polygon(0 0, 0 20.833vw, 45vw 20.833vw, 50vw 10.417vw, 35.069vw 0);
+    }
+    
+    .img {
+        display: flex;
+        position: relative;
+        width: 23.333vw;
+        height: 20.833vw;
+    }
+    
+    .img img {
+        clip-path: polygon(2.5vw 0.694vw, 0 20.833vw, 17.361vw 20.833vw, 22.569vw 11.806vw, 16.667vw 1.736vw);
+    }
+    
+    .content {
+        font-size: 2.083vw;
+        width: 21.667vw;
+        height: 11.944vw;
+        color: #fff;
+    }
+    
+    .content .off {
+        font-size: 4.861vw;
+    }
+    
+    .right {
+        display: flex;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right-container {
+        width: 37.083vw;
+        height: 13.403vw;
+        /* border: 0.069vw solid #ff0; */
+        position: relative;
+    }
+    
+    .right-container .time {
+        color: #fff;
+        font-size: 0.8vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 17vw;
+        height: 1.597vw;
+        text-align: right;
+    }
+    
+    .right-container .group {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 37.083vw;
+        height: 10.417vw;
+        background-color: #D7D4FC;
+    }
+    
+    .right-container .group .group-back {
+        display: flex;
+        width: 34.722vw;
+        height: 10.417vw;
+        background-color: #EDEBFD;
+        clip-path: polygon(0 3.472vw, 0 10.417vw, 34.028vw 10.417vw, 34.722vw 5.556vw, 27.083vw 0vw, 9.722vw 0vw);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .group-back .content-left {
+        text-align: center;
+    }
+    
+    button {
+        width: 14.306vw;
+        height: 2.222vw;
+        background-color: #000;
+        border: 0;
+        color: #fff;
+    
+    }
+    
+    .TC {
+        font-size: 0.694vw;
+        color: #858B9C;
+        position: absolute;
+        right: 0.833vw;
+        bottom: 1.389vw;
+    }
+    
+    .content-left-p1 {
+        font-size: 2.5vw;
+        font-weight: bold
+    }
+    
+    .content-left-p2 {
+        font-size: 1.389vw;
+    }
+    
+    .content-center-p1 {
+        font-size: 1.389vw;
+        font-weight: bold
+    }
+    
+    .content-center-p2 {
+        font-size: 0.833vw;
+        color: #4D5360;
+        margin: 0.347vw 0
+    }
+    }
+
+@media screen and (max-width:768px){
+    body,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #container {
+        display: flex;
+        width: 100vw;
+        height: 106.38vw;
+        background-color: #2D2765;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    #container::after {
+        content: '';
+        width: 72.917vw;
+        height: 100.911vw;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #6B5FF2;
+        clip-path: polygon(0 59.896vw, 24.74vw 100.911vw, 72.917vw 100.911vw, 72.917vw 0vw);
+    }
+    
+    .left {
+        width: 100vw;
+        height: 106.38vw;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        z-index: 100;
+    }
+    
+    .left .img {
+        display: flex;
+                position: relative;
+        width: 53.385vw;
+        height: 74.87vw;
+        margin-top: 7.813vw;
+    }
+    .img img{
+        clip-path: polygon(74.87vw 0vw, 20.833vw 4.557vw, 0vw 46.224vw, 21.484vw 74.609vw, 53.385vw 74.87vw);
+        
+    }
+    
+    .left .content {
+        width: 55.469vw;
+        height: 12.24vw;
+        color: #fff;
+        font-size: 3.906vw;
+        margin: 7.813vw 0 5.859vw 7.813vw;
+    }
+    
+    .left .content .off {
+        font-size: 15.625vw;
+        font-weight: bold;
+    }
+    
+    
+    .right {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100vw;
+        height: 49.479vw;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        box-sizing: border-box;
+    }
+    
+    .right-container {
+        width: 84.375vw;
+        height: 39.063vw;
+        position: relative;
+    }
+    
+    .right-container .time {
+        color: #fff;
+        font-size: 2.344vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 31.12vw;
+        height: 4.557vw;
+    
+    }
+    
+    .right-container .group {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 84.375vw;
+        height: 26.563vw;
+        background-color: #D7D4FC;
+    }
+    
+    .right-container .group .group-back {
+        display: flex;
+        width: 84.375vw;
+        height: 26.563vw;
+        background-color: #EDEBFD;
+        clip-path: polygon(0 10.677vw, 0 26.563vw, 77.474vw 26.563vw, 79.036vw 14.063vw, 61.458vw 0vw, 18.229vw 0vw);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .group-back .content-left {
+        text-align: center;
+    }
+    
+    button {
+        width: 43.49vw;
+        height: 7.031vw;
+        background-color: #000;
+        border: 0;
+        color: #fff;
+    }
+    
+    .content-left-p1 {
+        font-size: 5.469vw;
+        font-weight: bold
+    }
+    
+    .content-left-p2 {
+        font-size: 3.385vw;
+        font-weight: bold
+    }
+    
+    .content-center-p1 {
+        font-size: 3.385vw;
+        font-weight: bold
+    }
+    
+    .content-center-p2 {
+        font-size: 2.344vw;
+        color: #4D5360;
+        margin: 0.651vw 0
+    }
+    
+    .TC {
+        font-size: 2.604vw;
+        color: #858B9C;
+        position: absolute;
+        right: 2.604vw;
+        bottom: 2.604vw;
+    }
+}
